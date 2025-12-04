@@ -1,162 +1,321 @@
-# Fashion Recommendation System Using Deep Learning and Computer Vision# Fashion Recommendation System Using Deep Learning and Computer Vision<h2 align="center">SmartStylist: A Fashion Recommender System powered by Computer Vision</h2>
+# Fashion Recommendation System Using Deep Learning and Computer Vision# Fashion Recommendation System Using Deep Learning and Computer Vision# Fashion Recommendation System Using Deep Learning and Computer Vision<h2 align="center">SmartStylist: A Fashion Recommender System powered by Computer Vision</h2>
 
 
 
-An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.<br>
+An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.
 
 
 
-[Try the Demo](http://localhost:8501)An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.
+**[Try the Demo](http://localhost:8501)**An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.<br>
 
 
 
-## 🎯 Project Overview<center>
+## 🎯 Project Overview
 
 
 
-This system combines object detection, deep learning-based feature extraction, and efficient similarity search to deliver accurate fashion recommendations. The model analyzes uploaded fashion images, detects clothing items, extracts visual features, and retrieves the most similar items from a curated dataset.## 🎯 Project Overview<a href="https://www.joankusuma.com/post/smart-stylist-a-fashion-recommender-system-powered-by-computer-vision"><img src='https://img.shields.io/badge/Project_Page-SmartStylist-pink' alt='Project Page'></a> 
+This system combines object detection, deep learning-based feature extraction, and efficient similarity search to deliver accurate fashion recommendations. The model analyzes uploaded fashion images, detects clothing items, extracts visual features, and retrieves the most similar items from a curated dataset.[Try the Demo](http://localhost:8501)An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.
 
 
 
-## ✨ Key Features<a href='https://www.joankusuma.com/post/object-detection-model-yolov5-on-fashion-images'><img src='https://img.shields.io/badge/Project_Page-ObjectDetection-blue' alt='Object Detection'></a> 
+## ✨ Key Features
 
 
 
-- **Advanced Object Detection**: Utilizes YOLOv8 for precise clothing item detection and classificationThis system combines object detection, deep learning-based feature extraction, and efficient similarity search to deliver accurate fashion recommendations. The model analyzes uploaded fashion images, detects clothing items, extracts visual features, and retrieves the most similar items from a curated dataset.<a href='https://www.joankusuma.com/post/powering-visual-search-with-image-embedding'><img src='https://img.shields.io/badge/Project_Page-VisualSearch-green'></a> 
+- **Advanced Object Detection**: Utilizes YOLOv8 for precise clothing item detection and classification## 🎯 Project Overview<center>
 
 - **Deep Feature Extraction**: Custom CNN-based featurizer model for robust visual embeddings
 
-- **Efficient Similarity Search**: FAISS-powered vector indexing for real-time recommendations<a href='https://smartstylist.streamlit.app'><img src='https://img.shields.io/badge/Streamlit-Demo-red'></a>
+- **Efficient Similarity Search**: FAISS-powered vector indexing for real-time recommendations
 
 - **Interactive Web Interface**: Streamlit-based UI for seamless user experience
 
-- **Multi-Category Support**: Handles diverse clothing categories including:## ✨ Key Features</center>
-
-  - Coats & Jackets
-
-  - Dresses & Skirts<br>
-
-  - Shirts & Tops
-
-  - Pants & Shorts- **Advanced Object Detection**: Utilizes YOLOv8 for precise clothing item detection and classification<br>
-
-  - Shoes & Accessories
-
-  - And more...- **Deep Feature Extraction**: Custom CNN-based featurizer model for robust visual embeddings<figure>
+- **Multi-Category Support**: Handles diverse clothing categories including coats, jackets, dresses, skirts, shirts, tops, pants, shorts, shoes, and accessoriesThis system combines object detection, deep learning-based feature extraction, and efficient similarity search to deliver accurate fashion recommendations. The model analyzes uploaded fashion images, detects clothing items, extracts visual features, and retrieves the most similar items from a curated dataset.
 
 
 
-## 🏗️ Architecture- **Efficient Similarity Search**: FAISS-powered vector indexing for real-time recommendations    <center>
+## 🏗️ Architecture
 
 
 
-### 1. Object Detection Pipeline- **Interactive Web Interface**: Streamlit-based UI for seamless user experience        <img src="https://static.wixstatic.com/media/81114d_7f499b8207b848bc8bccfe1035a28b3d~mv2.png" alt="flowchart" height="350" width="600">
+### 1. Object Detection Pipeline
 
 - **Model**: YOLOv8 (ONNX format)
 
-- **Purpose**: Detects and localizes clothing items in images- **Multi-Category Support**: Handles diverse clothing categories including:    </center>
+- **Purpose**: Detects and localizes clothing items in images
 
 - **Output**: Bounding boxes with category classifications
 
-  - Coats & Jackets</figure>
+- **Advanced Object Detection**: Utilizes YOLOv8 for precise clothing item detection and classificationThis system combines object detection, deep learning-based feature extraction, and efficient similarity search to deliver accurate fashion recommendations. The model analyzes uploaded fashion images, detects clothing items, extracts visual features, and retrieves the most similar items from a curated dataset.
 
 ### 2. Feature Extraction
 
-- **Custom CNN Architecture**: Multi-layer featurizer model  - Dresses & Skirts
+- **Custom CNN Architecture**: Multi-layer featurizer model- **Deep Feature Extraction**: Custom CNN-based featurizer model for robust visual embeddings
 
 - **Feature Dimension**: 512-dimensional embeddings
 
-- **Framework**: PyTorch with ONNX export for deployment  - Shirts & Tops# Technical Features
+- **Framework**: PyTorch with ONNX export for deployment- **Efficient Similarity Search**: FAISS-powered vector indexing for real-time recommendations
 
 
-
-### 3. Similarity Matching  - Pants & Shorts* <b>Object Detection Model:</b> Leveraged the power of the YOLOv5 model trained on fashion images to detect fashion objects in images
+### 3. Similarity Matching- **Interactive Web Interface**: Streamlit-based UI for seamless user experience
 
 - **Index Type**: FAISS FlatL2 Index
 
-- **Search Method**: L2 distance-based nearest neighbor search  - Shoes & Accessories* <b>Feature Extraction:</b> Utilized a Convolutional AutoEncoder implemented with PyTorch to extract latent features from detected fashion objects
+- **Search Method**: L2 distance-based nearest neighbor search- **Multi-Category Support**: Handles diverse clothing categories including:## ✨ Key Features</center>
 
 - **Dataset**: 50,000+ indexed fashion items
 
-  - And more...* <b>Similarity Search Index: </b> Implemented FAISS library to construct an index, facilitating the search for visually similar outfits based on their distinct attributes
+  - Coats & Jackets
 
 ## 🛠️ Technology Stack
 
-
+  - Dresses & Skirts<br>
 
 - **Deep Learning**: PyTorch, ONNX Runtime
 
-- **Computer Vision**: OpenCV, PIL, Ultralytics YOLOv8## 🏗️ Architecture#### For more information on object detection model and feature extraction process, check out my repositories here:
+- **Computer Vision**: OpenCV, PIL, Ultralytics YOLOv8  - Shirts & Tops
 
 - **Search & Indexing**: FAISS (Facebook AI Similarity Search)
 
-- **Web Framework**: Streamlit* https://github.com/eyereece/yolo-object-detection-fashion
+- **Web Framework**: Streamlit  - Pants & Shorts- **Advanced Object Detection**: Utilizes YOLOv8 for precise clothing item detection and classification<br>
 
 - **Data Processing**: NumPy, Pandas
 
-- **Visualization**: Matplotlib, Plotly### 1. Object Detection Pipeline* https://github.com/eyereece/visual-search-with-image-embedding
+- **Visualization**: Matplotlib, Plotly  - Shoes & Accessories
 
 
 
-## 📊 Performance Metrics- **Model**: YOLOv8 (ONNX format)
+## 📊 Performance Metrics  - And more...- **Deep Feature Extraction**: Custom CNN-based featurizer model for robust visual embeddings<figure>
 
 
 
-The system has been extensively evaluated with the following results:- **Purpose**: Detects and localizes clothing items in images<br>
+The system has been extensively evaluated with the following results:
 
 
 
-- **Mean Average Precision (mAP)**: Competitive performance across all categories- **Output**: Bounding boxes with category classifications
+- **Mean Average Precision (mAP)**: Competitive performance across all categories## 🏗️ Architecture- **Efficient Similarity Search**: FAISS-powered vector indexing for real-time recommendations    <center>
 
 - **Retrieval Speed**: Real-time inference (<100ms per query)
 
-- **Scalability**: Handles 50K+ indexed items efficiently# Project Demo
+- **Scalability**: Handles 50K+ indexed items efficiently
 
 - **Category Accuracy**: High precision in multi-class detection
 
-### 2. Feature Extraction
+### 1. Object Detection Pipeline- **Interactive Web Interface**: Streamlit-based UI for seamless user experience        <img src="https://static.wixstatic.com/media/81114d_7f499b8207b848bc8bccfe1035a28b3d~mv2.png" alt="flowchart" height="350" width="600">
 
 ## 🚀 Getting Started
 
-- **Custom CNN Architecture**: Multi-layer featurizer model#### Online Streamlit Demo:
+- **Model**: YOLOv8 (ONNX format)
 
 ### Prerequisites
 
-- **Feature Dimension**: 512-dimensional embeddingsTry the [online streamlit demo](https://smartstylist.streamlit.app).
+- **Purpose**: Detects and localizes clothing items in images- **Multi-Category Support**: Handles diverse clothing categories including:    </center>
 
 ```bash
 
-Python 3.8+- **Framework**: PyTorch with ONNX export for deployment
+Python 3.8+- **Output**: Bounding boxes with category classifications
 
 pip
 
-```<b>Homepage:</b>
+```  - Coats & Jackets</figure>
 
 
 
-### Installation### 3. Similarity Matching
+### Installation### 2. Feature Extraction
 
 
 
-1. **Clone the repository**- **Index Type**: FAISS FlatL2 Index<figure>
+1. Clone the repository- **Custom CNN Architecture**: Multi-layer featurizer model  - Dresses & Skirts
+
+2. Install dependencies: `pip install -r requirements.txt`
+
+3. Download pre-trained models:- **Feature Dimension**: 512-dimensional embeddings
+
+   - Place YOLOv8 model (`best.onnx`) in `models/` directory
+
+   - Ensure featurizer model (`featurizer-model-1.pt`) is in root directory- **Framework**: PyTorch with ONNX export for deployment  - Shirts & Tops# Technical Features
+
+   - Add FAISS index (`flatIndex.index`) to root directory
+
+
+
+### Running the Application
+
+### 3. Similarity Matching  - Pants & Shorts* <b>Object Detection Model:</b> Leveraged the power of the YOLOv5 model trained on fashion images to detect fashion objects in images
 
 ```bash
 
-git clone https://github.com/dhriti-kourla/Fashion-Recommendation-System-Using-Deep-Learning-and-Computer-Vision.git- **Search Method**: L2 distance-based nearest neighbor search    <center>
+streamlit run home.py- **Index Type**: FAISS FlatL2 Index
 
-cd Fashion-Recommendation-System-Using-Deep-Learning-and-Computer-Vision
+```
 
-```- **Dataset**: 50,000+ indexed fashion items        <img src="https://static.wixstatic.com/media/81114d_e21c115d1ce141388a4ffc3ecd31c8ad~mv2.gif" alt="preview">
+- **Search Method**: L2 distance-based nearest neighbor search  - Shoes & Accessories* <b>Feature Extraction:</b> Utilized a Convolutional AutoEncoder implemented with PyTorch to extract latent features from detected fashion objects
+
+The application will launch in your default browser at `http://localhost:8501`
+
+- **Dataset**: 50,000+ indexed fashion items
+
+## 📁 Project Structure
+
+  - And more...* <b>Similarity Search Index: </b> Implemented FAISS library to construct an index, facilitating the search for visually similar outfits based on their distinct attributes
+
+```
+
+├── home.py                      # Main Streamlit application## 🛠️ Technology Stack
+
+├── featurizer_model.py          # Custom CNN feature extraction model
+
+├── obj_detection.py             # YOLOv8 object detection pipeline
+
+├── test_recommender.py          # Testing and evaluation scripts
+
+├── quick_train.py               # Model training utilities- **Deep Learning**: PyTorch, ONNX Runtime
+
+├── evaluation_metrics.py        # Performance evaluation tools
+
+├── models/- **Computer Vision**: OpenCV, PIL, Ultralytics YOLOv8## 🏗️ Architecture#### For more information on object detection model and feature extraction process, check out my repositories here:
+
+│   ├── best.onnx               # YOLOv8 detection model
+
+│   └── data.yaml               # Model configuration- **Search & Indexing**: FAISS (Facebook AI Similarity Search)
+
+├── pages/
+
+│   ├── gallery.py              # Sample results gallery- **Web Framework**: Streamlit* https://github.com/eyereece/yolo-object-detection-fashion
+
+│   └── TechnicalFeatures.py    # Technical documentation
+
+├── src/- **Data Processing**: NumPy, Pandas
+
+│   ├── featurizer_model.py     # Core feature extraction
+
+│   └── utilities.py            # Helper functions- **Visualization**: Matplotlib, Plotly### 1. Object Detection Pipeline* https://github.com/eyereece/visual-search-with-image-embedding
+
+├── index_images/               # Indexed fashion dataset
+
+├── gallery/                    # Sample queries and results
+
+└── requirements.txt            # Python dependencies
+
+```## 📊 Performance Metrics- **Model**: YOLOv8 (ONNX format)
 
 
 
-2. **Install dependencies**    </center>
+## 💡 How It Works
 
-```bash
+
+
+1. **Image Upload**: User uploads a fashion image through the web interfaceThe system has been extensively evaluated with the following results:- **Purpose**: Detects and localizes clothing items in images<br>
+
+2. **Object Detection**: YOLOv8 detects and crops clothing items
+
+3. **Feature Extraction**: CNN extracts 512-dimensional feature vectors
+
+4. **Similarity Search**: FAISS finds top-k most similar items
+
+5. **Results Display**: System presents visually similar recommendations- **Mean Average Precision (mAP)**: Competitive performance across all categories- **Output**: Bounding boxes with category classifications
+
+
+
+## 🎨 Use Cases- **Retrieval Speed**: Real-time inference (<100ms per query)
+
+
+
+- **E-commerce**: Product recommendation for online shopping platforms- **Scalability**: Handles 50K+ indexed items efficiently# Project Demo
+
+- **Fashion Discovery**: Help users find similar styles and alternatives
+
+- **Wardrobe Management**: Organize and match clothing items- **Category Accuracy**: High precision in multi-class detection
+
+- **Style Inspiration**: Discover new fashion combinations
+
+- **Visual Search**: Find products based on images rather than text### 2. Feature Extraction
+
+
+
+## 📈 Model Training## 🚀 Getting Started
+
+
+
+The system includes training scripts for custom datasets:- **Custom CNN Architecture**: Multi-layer featurizer model#### Online Streamlit Demo:
+
+
+
+```bash### Prerequisites
+
+python quick_train.py
+
+```- **Feature Dimension**: 512-dimensional embeddings
+
+
+
+Evaluation metrics can be generated using:```bash
+
+
+
+```bashPython 3.8+- **Framework**: PyTorch with ONNX export for deployment
+
+python evaluation_metrics.py
+
+```pip
+
+
+
+## 🔬 Technical Highlights```<b>Homepage:</b>
+
+
+
+- **Transfer Learning**: Leverages pre-trained weights for improved performance
+
+- **Efficient Indexing**: FAISS enables sub-linear search complexity
+
+- **Production-Ready**: ONNX format ensures cross-platform deployment### Installation### 3. Similarity Matching
+
+- **Modular Design**: Easy to extend with new categories or models
+
+- **Comprehensive Evaluation**: Multiple metrics for performance assessment
+
+
+
+## 📝 Acknowledgments1. **Clone the repository**- **Index Type**: FAISS FlatL2 Index<figure>
+
+
+
+This project was developed as an exploration of deep learning applications in fashion technology, drawing inspiration from recent advances in computer vision and recommendation systems.```bash
+
+
+
+## 📄 Licensegit clone https://github.com/dhriti-kourla/Fashion-Recommendation-System-Using-Deep-Learning-and-Computer-Vision.git- **Search Method**: L2 distance-based nearest neighbor search    <center>
+
+
+
+This project is licensed under the MIT License - see the LICENSE file for details.cd Fashion-Recommendation-System-Using-Deep-Learning-and-Computer-Vision
+
+
+
+## 🤝 Contributing```- **Dataset**: 50,000+ indexed fashion items        <img src="https://static.wixstatic.com/media/81114d_e21c115d1ce141388a4ffc3ecd31c8ad~mv2.gif" alt="preview">
+
+
+
+Contributions, issues, and feature requests are welcome!
+
+
+
+## 📧 Contact2. **Install dependencies**    </center>
+
+
+
+**Dhriti Kourla**```bash
+
+- GitHub: @dhriti-kourla
 
 pip install -r requirements.txt## 🛠️ Technology Stack</figure>
 
+---
+
 ```
+
+⭐ If you find this project useful, please consider giving it a star!
 
 
 
