@@ -6,7 +6,7 @@ An intelligent fashion recommendation system that leverages state-of-the-art dee
 
 
 
-**[Try the Demo](http://localhost:8501)**An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.<br>
+An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.<br>
 
 
 
@@ -14,7 +14,7 @@ An intelligent fashion recommendation system that leverages state-of-the-art dee
 
 
 
-This system combines object detection, deep learning-based feature extraction, and efficient similarity search to deliver accurate fashion recommendations. The model analyzes uploaded fashion images, detects clothing items, extracts visual features, and retrieves the most similar items from a curated dataset.[Try the Demo](http://localhost:8501)An intelligent fashion recommendation system that leverages state-of-the-art deep learning techniques and computer vision to analyze clothing images and provide personalized style suggestions based on visual similarity.
+This system combines object detection, deep learning-based feature extraction, and efficient similarity search to deliver accurate fashion recommendations. The model analyzes uploaded fashion images, detects clothing items, extracts visual features, and retrieves the most similar items from a curated dataset.
 
 
 
