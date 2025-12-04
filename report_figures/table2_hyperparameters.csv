@@ -1,0 +1,11 @@
+Parameter,Value,Description
+Learning Rate,3e-4,Initial learning rate with decay
+Batch Size,32,Mini-batch size for training
+Optimizer,Adam,Adaptive moment estimation
+Weight Decay,1e-5,L2 regularization coefficient
+Dropout Rate,0.2,Dropout probability for FC layers
+Training Epochs,20,Total training iterations
+Loss Function,MSE,Mean Squared Error for reconstruction
+Data Augmentation,Yes,Geometric and photometric augmentation
+Image Size,128×128,Input image resolution
+Embedding Dimension,512,Output embedding vector size

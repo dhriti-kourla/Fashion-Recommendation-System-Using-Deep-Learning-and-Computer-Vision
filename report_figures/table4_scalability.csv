@@ -1,0 +1,6 @@
+Database Size,Index Size (MB),Query Time (ms),Memory Usage (GB),Throughput (queries/sec)
+1K items,2.1,0.8,0.5,1250
+5K items,10.2,1.2,1.2,833
+10K items,20.5,2.3,2.4,435
+50K items,102.4,8.7,12.1,115
+100K items,204.8,15.2,24.3,66
