@@ -1,7 +1,0 @@
-Configuration,mAP@5,Change from Baseline,Key Impact
-Full System,66.7%,0.0%,Baseline
-Without YOLO Detection,52.3%,-21.6%,Reduced precision
-Shallow CNN (4 layers),48.1%,-27.9%,Insufficient capacity
-CrossEntropy Loss,44.2%,-33.7%,Poor feature learning
-Without Data Augmentation,58.9%,-11.7%,Overfitting
-Cosine Similarity,63.1%,-5.4%,Suboptimal metric

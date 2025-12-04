@@ -1,5 +1,0 @@
-Method,mAP@5,Category Precision,Diversity Score,Latency (ms)
-Collaborative Filtering,23.4%,31.2%,0.45,15
-Content-Based (Traditional CV),34.7%,42.1%,0.52,78
-Pre-trained CNN,41.2%,48.3%,0.58,67
-Proposed +Layer CNN,66.7%,51.9%,0.71,95
